@@ -7,375 +7,408 @@
 	},
 	"item": [
 		{
-			"name": "POST /api/user/signup",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\": \"motilleta2\",\n    \"email\": \"montilla22@gmail.com\",\n    \"password\": \"12345\",\n    \"role\": \"READER\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/api/user/signup",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"user",
-						"signup"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/user/signin",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzAwOTI1MjksImV4cCI6MTczMTMwMjEyOX0.2fazJe3yrO-X64BFcQ0I7aB26bVlPLjmHjLoSOf3MWw",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\" : \"obandinho12\",\n    \"password\": \"12345\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/api/user/signin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"user",
-						"signin"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/theme/create",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzAxMjQxNjgsImV4cCI6MTczMTMzMzc2OH0.bRKY7zEVEd04VIBqNHOXpBl5f0ZBXgtgZIHypPKnjRI",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"theme\" : \"Ciencias\",\n    \"cover\" : \"www.imagecover.com\",\n    \"permissions\" : {\n        \"image\" : true,\n        \"video\" : false,\n        \"text\" : false\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/api/theme/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"theme",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/theme/update",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "sdjknkjsdfnkjdsafnfkjan98u348r934hfiunwaoiunfeinajifenkajnfkjlansdkfjnaskjfdnlaskjdfnkajsnflkjas",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"theme\":\"Lenguaje\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/api/theme/update/671f00175002ada8dad904f4",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"theme",
-						"update",
-						"671f00175002ada8dad904f4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/theme/list",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzFmMWYyZjM1NzlkZTFlMDhiZGNmZWEiLCJyb2xlIjoiUkVBREVSIiwiaWF0IjoxNzMwMDkyODQ4LCJleHAiOjE3MzEzMDI0NDh9.h5ZlHPZ6Qj3OHbUBVtpc7Slrrq5KkCkypEr26YirJfw",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://localhost:3000/api/theme/list",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"theme",
-						"list"
-					],
-					"query": [
-						{
-							"key": "Authorization",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzAwOTI1MjksImV4cCI6MTczMTMwMjEyOX0.2fazJe3yrO-X64BFcQ0I7aB26bVlPLjmHjLoSOf3MWw",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/user/list",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzAxMjQxNjgsImV4cCI6MTczMTMzMzc2OH0.bRKY7zEVEd04VIBqNHOXpBl5f0ZBXgtgZIHypPKnjRI",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://localhost:3000/api/user/list",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"user",
-						"list"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/theme/delete",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "sdjknkjsdfnkjdsafnfkjan98u348r934hfiunwaoiunfeinajifenkajnfkjlansdkfjnaskjfdnlaskjdfnkajsnflkjas",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\" : \"reom12\",\n    \"password\": \"1234\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/api/theme/delete/671f00175002ada8dad904f4",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"theme",
-						"delete",
-						"671f00175002ada8dad904f4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /api/content/create",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "{{JWT}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "file",
-							"type": "file",
-							"src": "/Users/rogerobando7/Downloads/WhatsApp Image 2024-09-13 at 07.47.54.jpeg"
+			"name": "USER",
+			"item": [
+				{
+					"name": "POST /api/user/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"motilleta2\",\n    \"email\": \"montilla22@gmail.com\",\n    \"password\": \"12345\",\n    \"role\": \"READER\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "title",
-							"value": "Musculos",
-							"type": "text"
-						},
-						{
-							"key": "type",
-							"value": "IMAGE",
-							"type": "text"
-						},
-						{
-							"key": "user",
-							"value": "671f112048b825d55ce2fa8f",
-							"type": "text"
-						},
-						{
-							"key": "theme",
-							"value": "671f9ceaef4e04b55a46f1b3",
-							"type": "text"
+						"url": {
+							"raw": "http://localhost:3000/api/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:3000/api/content/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"content",
-						"create"
-					]
+				{
+					"name": "POST /api/user/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"obandinho12\",\n    \"password\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /api/user/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/user/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"list"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "POST /api/content/update",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "sdjknkjsdfnkjdsafnfkjan98u348r934hfiunwaoiunfeinajifenkajnfkjlansdkfjnaskjfdnlaskjdfnkajsnflkjas",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\" : \"reom12\",\n    \"password\": \"1234\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "THEME",
+			"item": [
+				{
+					"name": "POST /api/theme/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"theme\" : \"Ciencias\",\n    \"cover\" : \"www.imagecover.com\",\n    \"permissions\" : {\n        \"image\" : true,\n        \"video\" : false,\n        \"text\" : false\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/theme/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"theme",
+								"create"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:3000/api/content/update",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"content",
-						"update"
-					]
+				{
+					"name": "POST /api/theme/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"theme\":\"Lenguaje\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/theme/update/671f00175002ada8dad904f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"theme",
+								"update",
+								"671f00175002ada8dad904f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/theme/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/theme/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"theme",
+								"list"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzAwOTI1MjksImV4cCI6MTczMTMwMjEyOX0.2fazJe3yrO-X64BFcQ0I7aB26bVlPLjmHjLoSOf3MWw",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /api/theme/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"reom12\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/theme/delete/671f00175002ada8dad904f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"theme",
+								"delete",
+								"671f00175002ada8dad904f4"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "POST /api/content/delete",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "sdjknkjsdfnkjdsafnfkjan98u348r934hfiunwaoiunfeinajifenkajnfkjlansdkfjnaskjfdnlaskjdfnkajsnflkjas",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "CONTENT",
+			"item": [
+				{
+					"name": "POST /api/content/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/rogerobando7/Downloads/WhatsApp Image 2024-09-13 at 07.47.54.jpeg"
+								},
+								{
+									"key": "title",
+									"value": "Musculos",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "IMAGE",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "671f112048b825d55ce2fa8f",
+									"type": "text"
+								},
+								{
+									"key": "theme",
+									"value": "671f9ceaef4e04b55a46f1b3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/content/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"content",
+								"create"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:3000/api/content/delete",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"content",
-						"delete"
-					]
+				{
+					"name": "PUT /api/content/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/rogerobando7/Downloads/WhatsApp Image 2024-09-13 at 07.47.54.jpeg"
+								},
+								{
+									"key": "title",
+									"value": "Musculos",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "IMAGE",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "671f112048b825d55ce2fa8f",
+									"type": "text"
+								},
+								{
+									"key": "theme",
+									"value": "671f9ceaef4e04b55a46f1b3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/content/update/671f00175002ada8dad904f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"content",
+								"update",
+								"671f00175002ada8dad904f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /api/content/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/content/delete/671f00175002ada8dad904f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"content",
+								"delete",
+								"671f00175002ada8dad904f4"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
